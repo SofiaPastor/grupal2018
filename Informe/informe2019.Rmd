@@ -167,6 +167,10 @@ backTransform(m1, type="lambda") # Individuals per plot
 backTransform(m1, type="det") # Probability of detection
 ```
 
+```{r, fig.cap='Histograma de la Longitud (cm) de L. galeatus encontrados en el muestreo'}
+histogramacambute<-ggplot(data=cambute_bruto, aes(`longitud total`))+geom_histogram(binwidth = 0.25, fill="turquoise")+theme_classic()+labs(x="Longitud de cambute(cm)", y="Conteo")
+histogramacambute
+```
 
 \FloatBarrier
 
